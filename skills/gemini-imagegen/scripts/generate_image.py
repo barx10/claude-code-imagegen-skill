@@ -22,7 +22,7 @@ try:
 except ImportError:
     pass  # dotenv is optional
 
-MODEL = "gemini-2.0-flash-preview-image-generation"
+MODEL = "gemini-3.1-flash-image"
 
 
 def get_client():
