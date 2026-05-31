@@ -34,9 +34,9 @@ Help users create stunning AI-generated images by:
    - Composition and framing
    - Color palette or mood
 
-3. **Generate**: Run the script:
+3. **Generate**: Run the script (output saves to current project directory):
    ```bash
-   python /path/to/skills/gemini-imagegen/scripts/generate_image.py \
+   python3 ~/.claude/plugins/cache/barx10-imagegen/gemini-imagegen/unknown/skills/gemini-imagegen/scripts/generate_image.py \
      --prompt "your detailed prompt" \
      --output descriptive_name.png
    ```
@@ -57,7 +57,7 @@ Help users create stunning AI-generated images by:
 
 3. **Generate**: Run the script with input image:
    ```bash
-   python /path/to/skills/gemini-imagegen/scripts/generate_image.py \
+   python3 ~/.claude/plugins/cache/barx10-imagegen/gemini-imagegen/unknown/skills/gemini-imagegen/scripts/generate_image.py \
      --input source_image.jpg \
      --prompt "transformation description" \
      --output transformed.png
@@ -105,7 +105,7 @@ Build prompts with these components:
 ## Before Each Generation
 
 Always:
-1. Check that OPENROUTER_API_KEY is set
+1. Check that GOOGLE_API_KEY is set
 2. Verify input image exists (for image-to-image)
 3. Choose a descriptive output filename
 4. Inform user that generation is starting
